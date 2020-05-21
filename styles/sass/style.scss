@@ -1,0 +1,13 @@
+@import '_setup.scss';
+@import '_variables.scss';
+@import '_mixins.scss';
+
+body {
+  background-color: teal;
+  font-size: 100px;
+  color: goldenrod;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
