@@ -236,7 +236,7 @@ html {
 }
 
 html {
-  font-size: 62.5%;
+  font-size: calc(5px + (10 - 5) * (100vw - 320px) / (1600 - 320));
 }
 
 body {
@@ -259,12 +259,26 @@ a {
   display: inline-block;
 }
 
-body {
-  background-color: teal;
-  font-size: 100px;
-  color: goldenrod;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  width: 100vw;
-  height: 100vh;
-  text-align: center;
+h1 {
+  font-family: "Dokdo", cursive;
+  font-size: 10rem;
+  color: #FFC600;
+}
+
+button {
+  font-family: "Dokdo", cursive;
+  color: #FAFFFE;
+  background-color: #555F02;
+  padding: 5px;
+  border: none;
+}
+
+button:hover,
+button:focus {
+  color: #FFC600;
+}
+
+button:active {
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
 }

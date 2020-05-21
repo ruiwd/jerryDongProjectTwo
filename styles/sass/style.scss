@@ -1,13 +1,24 @@
 @import '_setup.scss';
 @import '_variables.scss';
 @import '_mixins.scss';
+@import '_indexStyle.scss';
+@import '_blogStyle.scss';
+@import '_contactStyle.scss';
+@import '_mediaQueries.scss';
 
-body {
-  background-color: teal;
-  font-size: 100px;
-  color: goldenrod;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  width: 100vw;
-  height: 100vh;
-  text-align: center;
+button {
+  font-family: $font1;
+  color: $text;
+  background-color: $accent2;
+  padding: 5px;
+  border: none;
+}
+
+button:hover,
+button:focus {
+  color: $accent1;
+}
+
+button:active {
+  filter: brightness(70%)
 }
