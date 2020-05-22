@@ -5,22 +5,3 @@
   font-size: $size * 1rem;
   color: $accent1;
 }
-
-@mixin button {
-  button {
-    font-family: $font1;
-    color: $text;
-    background-color: $accent2;
-    padding: 5px;
-  }
-
-  button:hover,
-  button:focus,
-  button:focus-within {
-    color: $accent1;
-  }
-
-  button:active {
-    filter: brightness(70%)
-  }
-}
