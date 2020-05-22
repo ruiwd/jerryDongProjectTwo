@@ -259,10 +259,147 @@ a {
   display: inline-block;
 }
 
+header.home {
+  background-image: url(../assets/home-image-1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-x: right;
+  background-repeat: no-repeat;
+}
+
+.comments h2 {
+  color: #FAFFFE;
+}
+
+.comments img {
+  float: left;
+}
+
+.comments img + p {
+  color: #FFC600;
+  font-weight: 700;
+}
+
+.wrapper {
+  max-width: 1400px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #262725;
+}
+
 h1 {
   font-family: "Dokdo", cursive;
-  font-size: 10rem;
+  font-size: 10.5rem;
   color: #FFC600;
+}
+
+.heroText h1 {
+  font-family: "Dokdo", cursive;
+  font-size: 11.5rem;
+  color: #FFC600;
+}
+
+h2 {
+  font-family: "Dokdo", cursive;
+  font-size: 4.5rem;
+  color: #FFC600;
+}
+
+.logo h2 {
+  font-family: "Dokdo", cursive;
+  font-size: 4.2rem;
+  color: #FFC600;
+}
+
+h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 11.5rem;
+  color: #FAFFFE;
+}
+
+h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 4rem;
+  color: #FAFFFE;
+  line-height: 5.8rem;
+  letter-spacing: .43rem;
+}
+
+p,
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  color: #FAFFFE;
+  line-height: 3.2rem;
+  letter-spacing: .2rem;
+  font-weight: 400;
+}
+
+p,
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  color: #FAFFFE;
+  line-height: 3.2rem;
+  letter-spacing: .2rem;
+  font-weight: 400;
+}
+
+p,
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  color: #FAFFFE;
+  line-height: 3.2rem;
+  letter-spacing: .2rem;
+  font-weight: 400;
+}
+
+p,
+input::placeholder,
+textarea::placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  color: #FAFFFE;
+  line-height: 3.2rem;
+  letter-spacing: .2rem;
+  font-weight: 400;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-weight: 300;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  font-weight: 300;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  font-weight: 300;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-weight: 300;
+}
+
+nav a {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  color: #FAFFFE;
+  line-height: 2.9rem;
+  letter-spacing: .1rem;
+  font-weight: 700;
+  text-align: center;
 }
 
 button {
@@ -281,4 +418,34 @@ button:focus {
 button:active {
   -webkit-filter: brightness(70%);
           filter: brightness(70%);
+}
+
+header {
+  padding-top: 3rem;
+}
+
+.logo {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav a {
+  padding: 10px;
+}
+
+li.currentPage a {
+  color: #FFC600;
 }

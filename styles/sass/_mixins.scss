@@ -1,7 +1,13 @@
 @import '_variables.scss';
 
 @mixin heading($size) {
-  font-family: $font1;
+  font-family: $fontOne;
   font-size: $size * 1rem;
-  color: $accent1;
+  color: $accentOne;
+}
+
+@mixin text($size) {
+  font-family: $fontTwo;
+  font-size: $size * 1rem;
+  color: $textColor;
 }

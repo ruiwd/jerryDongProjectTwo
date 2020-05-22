@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-  <header>
+  <header class="contact">
     <div class="wrapper">
       <div class="logo">
       <h2>Mind n' Soul</h2>
@@ -27,15 +27,17 @@
   </header>
   <main>
     <div class="wrapper">
-      <form action="">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" placeholder="Name">
-        <label for="email">Email address</label>
-        <input type="email" name="email" id="email" placeholder="Email address">
-        <label for="message">Message</label>
-        <textarea name="message" id="message" placeholder="Message"></textarea>
-        <button type="submit">Submit</button>
-      </form>
+      <section class="form">
+        <form action="">
+          <label class="sr-only" for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Name">
+          <label class="sr-only" for="email">Email address</label>
+          <input type="email" name="email" id="email" placeholder="Email address">
+          <label class="sr-only" for="message">Message</label>
+          <textarea name="message" id="message" placeholder="Message"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
       <div class="contact">
         <div class="social">
           <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>

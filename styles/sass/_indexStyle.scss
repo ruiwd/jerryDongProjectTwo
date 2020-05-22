@@ -1,4 +1,7 @@
-h1 {
-  @include heading(10)
+header.home {
+  background-image: url(../assets/home-image-1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-x: right;
+  background-repeat: no-repeat;
 }
-

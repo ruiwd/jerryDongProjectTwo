@@ -1,0 +1,12 @@
+.comments h2 {
+  color: $textColor;
+}
+
+.comments img {
+  float: left;
+}
+
+.comments img + p {
+  color: $accentOne;
+  font-weight: 700;
+}

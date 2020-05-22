@@ -6,19 +6,103 @@
 @import '_contactStyle.scss';
 @import '_mediaQueries.scss';
 
+.wrapper {
+  max-width: 1400px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: $backgroundOne;
+}
+
+h1 {
+  @include heading(10.5)
+}
+
+.heroText h1 {
+  @include heading(11.5)
+}
+
+h2 {
+  @include heading(4.5)
+}
+
+.logo h2 {
+  @include heading(4.2)
+}
+
+h3 {
+  @include text(11.5)
+}
+
+h4 {
+  @include text(4);
+  line-height: 5.8rem;
+  letter-spacing: .43rem;
+}
+
+p,
+input::placeholder,
+textarea::placeholder {
+  @include text(2);
+  line-height: 3.2rem;
+  letter-spacing: .2rem;
+  font-weight: 400;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-weight: 300;
+}
+
+nav a {
+  @include text(2);
+  line-height: 2.9rem;
+  letter-spacing: .1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
 button {
-  font-family: $font1;
-  color: $text;
-  background-color: $accent2;
+  font-family: $fontOne;
+  color: $textColor;
+  background-color: $accentTwo;
   padding: 5px;
   border: none;
 }
 
 button:hover,
 button:focus {
-  color: $accent1;
+  color: $accentOne;
 }
 
 button:active {
   filter: brightness(70%)
+}
+
+header {
+  padding-top: 3rem;
+}
+
+.logo {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+
+nav a {
+  padding: 10px;
+}
+
+li.currentPage a {
+  color: $accentOne;
 }

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-  <header>
+  <header class="blog">
     <div class="wrapper">
       <div class="logo">
       <h2>Mind n' Soul</h2>
@@ -44,7 +44,7 @@
       <div class="wrapper">
         <div class="text">
           <h2>Come and discover our space</h2>
-          <p>Monday May 5th, 2019 by <span class="author">Saron</span>></p>
+          <p>Monday May 5th, 2019 by <span class="author">Saron</span></p>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut explicabo nam magnam provident consequuntur placeat expedita, quas modi earum minima alias magni accusamus? Necessitatibus molestiae nulla, dicta similique minus non!</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti reprehenderit id similique exercitationem, non dignissimos asperiores nobis quas laudantium magni alias eaque est. Perspiciatis voluptate officia quibusdam temporibus esse officiis! Dolorum, maiores? Dolorum aut ut enim nam maiores suscipit unde!</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, labore. In tempora laboriosam modi fugiat reprehenderit libero eius aliquid illum at iusto et voluptatum alias animi minus expedita, consectetur corporis accusantium harum. Molestias nihil laudantium at maxime, totam recusandae et sit necessitatibus perspiciatis, sint labore vel animi tempora reiciendis illo optio, maiores pariatur deserunt? Nulla nesciunt veritatis quia in mollitia!</p>
@@ -54,13 +54,24 @@
     </section>
     <section class="comments">
       <div class="wrapper"> 
-        <h2>Comments</h2>         
+        <h2>Comments:</h2>
+        <div class="firstComment clearfix">
+          <img src="./assets/comment-image.jpg" alt="Commentor's profile photo">
+          <p>Tuesday October 9th, 2019 by <span class="author">Davin</span></p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error veniam, ex assumenda earum eius tenetur placeat laboriosam voluptatem dolorem provident vel harum suscipit perspiciatis animi voluptatum? Ullam molestias blanditiis illo?
+          </p>
+        </div>        
+        <div class="secondComment clearfix">
+          <img src="./assets/comment-image2.jpg" alt="Commentor's profile photo">
+          <p>Wednesday October 10th, 2019 by <span>Lisa</span></p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dignissimos ratione dolorem unde laborum quibusdam culpa iusto sequi totam et. Aspernatur voluptatem aut expedita iure earum dolores. In, quidem provident?</p>
+        </div>
         <form action="">
-          <label for="name">Name</label>
+          <label class="sr-only" for="name">Name</label>
           <input type="text" name="name" id="name" placeholder="Name">
-          <label for="email">Email address</label>
+          <label class="sr-only" for="email">Email address</label>
           <input type="email" name="email" id="email" placeholder="Email address">
-          <label for="comment">Comment</label>
+          <label class="sr-only" for="comment">Comment</label>
           <textarea name="comment" id="comment" placeholder="Comment"></textarea>
           <button type="submit">Post Comment</button>
         </form>
