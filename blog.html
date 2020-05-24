@@ -4,46 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog</title>
-  <link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Lato:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet"> 
   <script src='https://kit.fontawesome.com/30b04c8f55.js' crossorigin='anonymous'></script>
   <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
+<body class="blog">
   <header class="blog">
     <div class="wrapper">
-      <div class="logo">
-      <h2>Mind n' Soul</h2>
+      <div class="bar">
+        <h1 class="logo">Mindn'Soul</h1>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html">About</a></li>
+            <li class="currentPage"><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./index.html">About</a></li>
-          <li class="currentPage"><a href="./blog.html">Blog</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <h1>Blog</h1>
+      <h2>Blog</h2>
     </div>
   </header>
-  <aside>
-    <img src="./assets/sidebar-image.jpg" alt="Stack of rocks">
-    <h4>Our mission</h4>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui quidem temporibus eaque quaerat aut? Excepturi?</p>
-    <h4>
-      <ul>
-        <li><a href="#">Lorem ipsum dolor sit.</a></li>
-        <li><a href="#">Lorem ipsum dolor sit.</a></li>
-        <li><a href="#">Lorem ipsum dolor sit.</a></li>
-        <li><a href="#">Lorem ipsum dolor sit.</a></li>
-      </ul>
-    </h4>
+
+  <aside class="blog">
+    <div class="container">
+      <img src="./assets/sidebar-image.jpg" alt="Stack of rocks">
+      <h3>Our mission</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui quidem temporibus eaque quaerat aut? Excepturi?</p>
+      <h3>Recent posts</h3>
+      <div class="recent">
+        <ul>
+          <li><a href="#">Lorem ipsum dolor sit.</a></li>
+          <li><a href="#">Lorem ipsum dolor sit.</a></li>
+          <li><a href="#">Lorem ipsum dolor sit.</a></li>
+          <li><a href="#">Lorem ipsum dolor sit.</a></li>
+        </ul>
+      </div>
+    </div>
   </aside>
-  <main>
+
+  <main class="blog">
+
     <section class="post">
       <img src="./assets/post-image.jpg" alt="Brass gong">
       <div class="wrapper">
         <div class="text">
-          <h2>Come and discover our space</h2>
+          <h3>Come and discover our space</h3>
           <p>Monday May 5th, 2019 by <span class="author">Saron</span></p>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut explicabo nam magnam provident consequuntur placeat expedita, quas modi earum minima alias magni accusamus? Necessitatibus molestiae nulla, dicta similique minus non!</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti reprehenderit id similique exercitationem, non dignissimos asperiores nobis quas laudantium magni alias eaque est. Perspiciatis voluptate officia quibusdam temporibus esse officiis! Dolorum, maiores? Dolorum aut ut enim nam maiores suscipit unde!</p>
@@ -52,21 +58,25 @@
         </div>
       </div>
     </section>
+
     <section class="comments">
       <div class="wrapper"> 
-        <h2>Comments:</h2>
-        <div class="firstComment clearfix">
+        <h3>Comments:</h3>
+        <div class="userComment">
           <img src="./assets/comment-image.jpg" alt="Commentor's profile photo">
-          <p>Tuesday October 9th, 2019 by <span class="author">Davin</span></p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error veniam, ex assumenda earum eius tenetur placeat laboriosam voluptatem dolorem provident vel harum suscipit perspiciatis animi voluptatum? Ullam molestias blanditiis illo?
-          </p>
+          <div class="commentText">
+            <p class="commentDate">Tuesday October 9th, 2019 by <span class="author">Davin</span></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ratione optio aliquam provident atque consectetur blanditiis facilis, fugit qui placeat? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, obcaecati.</p>
+          </div>
         </div>        
-        <div class="secondComment clearfix">
+        <div class="userComment">
           <img src="./assets/comment-image2.jpg" alt="Commentor's profile photo">
-          <p>Wednesday October 10th, 2019 by <span>Lisa</span></p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dignissimos ratione dolorem unde laborum quibusdam culpa iusto sequi totam et. Aspernatur voluptatem aut expedita iure earum dolores. In, quidem provident?</p>
+          <div class="commentText">
+            <p class="commentDate">Wednesday October 10th, 2019 by <span>Lisa</span></p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur ab beatae ad molestias dolores porro sint totam ipsum laudantium? Cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, blanditiis!</p>
+          </div>
         </div>
-        <form action="">
+        <form action="submit">
           <label class="sr-only" for="name">Name</label>
           <input type="text" name="name" id="name" placeholder="Name">
           <label class="sr-only" for="email">Email address</label>
@@ -77,9 +87,12 @@
         </form>
       </div>
     </section>
+
   </main>
+
   <footer>
-    Copyright <span>&copy;</span> 2020 Juno College
+    <p>Copyright <span>&copy;</span> 2020 Juno College</p>
   </footer>
+
 </body>
 </html>

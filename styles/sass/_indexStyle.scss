@@ -1,7 +1,176 @@
 header.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
   background-image: url(../assets/home-image-1.jpg);
   background-attachment: fixed;
   background-size: cover;
-  background-position-x: right;
+  background-position-x: 70%;
   background-repeat: no-repeat;
+}
+
+header.home .heroText {
+  position: absolute;
+  left: 43%;
+  top: 40%;
+}
+
+header.home img {
+  margin-top: 150px;
+  width: 40%;
+}
+
+.intro .wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0px 70px 0px;
+}
+
+.intro .text {
+  width: 70%;
+}
+
+.intro .text p {
+  margin: 20px 0px 30px 0px;
+}
+
+.intro img {
+  width: 25%;
+  filter: drop-shadow(-20px 20px 0px $accentTwo);
+}
+
+.gallery {
+  background-color: $backgroundOne;
+  padding: 75px 0px;
+}
+
+.gallery .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery img {
+  width: 30%;
+}
+
+.links .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 0px 100px 0px;
+}
+
+.links .offers,
+.links .community,
+.links .blog,
+.links .contact {
+  width: 42%;
+  position: relative;
+  margin: 20px 0px;
+}
+
+.links .offers,
+.links .blog {
+  margin-left: 50px;
+}
+
+.links i {
+  font-size: 2.5rem;
+  color: $textColor;
+  position: absolute;
+  top: 10px;
+  left: -50px;
+}
+
+.links .blog i {
+  padding-left: 4px;
+}
+
+.links .contact i {
+  padding-left: 2px;
+}
+
+.links i::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  background-color: $accentTwo;
+  z-index: -10;
+  top: -8px;
+  left: -8px;
+}
+
+.details {
+  background-color: $backgroundOne;
+  height: 800px;
+  position: relative;
+}
+
+.details img,
+.details .text {
+  position: absolute;
+  width: 45%;
+}
+
+.details .text p {
+  margin: 10px 0px;
+}
+
+.details .text button {
+  margin: 20px 0px;
+}
+
+img.left {
+  filter: drop-shadow(20px 20px 0px $accentOne);
+  left: 0px;
+  top: -50px;
+}
+
+img.right {
+  filter: drop-shadow(-20px 20px 0px $accentOne);
+  right: 0px;
+  bottom: -50px;
+}
+
+.text.left {
+  padding-left: 7.5vw;
+  left: 0px;
+  bottom: 50px;
+  text-align: right;
+}
+
+.text.right {
+  padding-right: 7.5vw;
+  right: 0px;
+  top: 50px;
+}
+
+.footerBanner {
+  width: 100%;
+  height: 500px;
+  background-image: url(../assets/banner-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.trials {
+  padding: 80px;
+}
+
+.trials h3 {
+  text-align: center;
+}
+
+.trials p {
+  display: block;
+  width: 70%;
+  margin: 20px auto;
+}
+
+.trials button {
+  display: block;
+  margin: 0 auto;
 }

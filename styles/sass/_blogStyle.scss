@@ -1,12 +1,166 @@
-.comments h2 {
+header.blog {
+  background-image: url(../assets/blog-image-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  position: relative;
+}
+
+body.blog {
+  height: 2800px
+}
+
+header.blog h2 {
+  position: absolute;
+  top: 50%;
+}
+
+main.blog {
+  position: absolute;
+  top: 350px;
+}
+
+aside.blog {
+  right: 0;
+}
+
+aside.blog .container {
+  position: relative;
+}
+
+aside.blog img {
+  width: 100%;
+}
+
+aside.blog::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: $accentTwo;
+  height: 100%;
+  width: calc(100% + 20px);
+  left: -20px;
+  bottom: -30px;
+  z-index: -10;
+}
+
+aside.blog h3 {
   color: $textColor;
+  font-size: 3rem;
 }
 
-.comments img {
-  float: left;
+aside.blog a {
+  @include text(2);
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-top: 5px;
+  border-bottom: 2px solid rgba( $textColor, $alpha: 0);
+  transition: all 0.5s;
 }
 
-.comments img + p {
+aside.blog a:hover {
+  border-bottom: 2px solid $textColor;
+}
+
+aside.blog li {
+  position: relative;
+}
+
+aside.blog li::before {
+  content: "\2022";
+  color: $accentOne; 
+  font-weight: bold;
+  display: inline-block;
+  width: 2rem; 
+}
+
+.post .text {
+  width: calc(60% + 10px);
+  padding-right: 15px;
+  position: relative;
+  padding: 0px 30px 30px 0px;
+}
+
+.post .text::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: $backgroundTwo;
+  height: 110%;
+  width: 120%;
+  right: -26px;
+  bottom: 5px;
+  z-index: -10;
+}
+
+.post .text::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: $accentTwo;
+  height: 110%;
+  width: 120%;
+  right: -31px;
+  bottom: 0px;
+  z-index: -20;
+}
+
+.post .text h3 {
+  margin-top: 50px;
+}
+
+.comments .userComment {
+  width: 60%
+}
+
+.post img {
+  width: 60%;
+  filter: drop-shadow(20px 20px 0px $accentTwo);
+}
+
+.post p {
+  margin-bottom: 20px;
+}
+
+main.blog h3 + p {
+  font-style: italic;
+  letter-spacing: -0.01rem;
+}
+
+.author {
+  font-weight: 700;
+}
+
+.comments {
+  padding: 30px 0px 100px 0px;
+}
+
+.comments h3 {
+  color: $textColor;
+  margin: 20px 0px;
+}
+
+.userComment {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.userComment img {
+  width: 15%;
+  align-self: flex-start;
+}
+
+.commentText {
+  width: 80%;
+}
+
+.commentDate {
   color: $accentOne;
   font-weight: 700;
+}
+
+.comments input,
+.comments textarea {
+  background-color: $backgroundTwo;
 }

@@ -1,0 +1,56 @@
+header.contact {
+  background-image: url(../assets/contact-image-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  position: relative;
+}
+
+body.contact {
+  height: 1000px
+}
+
+header.contact h2 {
+  position: absolute;
+  top: 50%;
+}
+
+aside.contact {
+  left: 70%;
+}
+
+main.contact {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  top: 350px;
+}
+
+main.contact .container {
+  position: relative;
+}
+
+.contact form {
+  padding: 5rem;
+  filter: drop-shadow(20px 20px 0px $accentOne);
+  position: absolute;
+  top: -35%;
+  height: auto;
+}
+
+.contact input,
+.contact textarea,
+.contact form {
+  background-color: $backgroundOne;
+}
+
+.contact .social i {
+  color: $accentOne;
+  font-size: 2.5rem;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+.social + p {
+  margin: 10px 0px;
+}

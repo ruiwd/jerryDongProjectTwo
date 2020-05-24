@@ -4,31 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
-  <link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Lato:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet"> 
   <script src='https://kit.fontawesome.com/30b04c8f55.js' crossorigin='anonymous'></script>
   <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
+<body class="contact">
+
   <header class="contact">
     <div class="wrapper">
-      <div class="logo">
-      <h2>Mind n' Soul</h2>
+      <div class="bar">
+        <h1 class="logo">Mindn'Soul</h1>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html">About</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li class="currentPage"><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./index.html">About</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li class="currentPage"><a href="./contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <h1>Get in Touch</h1>
-    </div>      
+      <h2>Get in Touch</h2>    
+    </div>
   </header>
-  <main>
-    <div class="wrapper">
-      <section class="form">
-        <form action="">
+
+  <aside class="contact">
+    <div class="social">
+      <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+      <a href="https://whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p>info@email.com</p>
+    <p>123-456-7890</p>
+    <p>123 Queen Street West</p>
+    <p>Unit 10</p>
+    <p>Toronto, Ontario</p>
+    <p>M5V2D5</p>
+  </aside>
+
+  <main class="contact">
+
+    <section class="form">
+      <div class="wrapper container">
+        <form action="submit">
           <label class="sr-only" for="name">Name</label>
           <input type="text" name="name" id="name" placeholder="Name">
           <label class="sr-only" for="email">Email address</label>
@@ -37,25 +55,14 @@
           <textarea name="message" id="message" placeholder="Message"></textarea>
           <button type="submit">Submit</button>
         </form>
-      </section>
-      <div class="contact">
-        <div class="social">
-          <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
-          <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-          <a href="https://whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
-        </div>
-        <p>info@email.com</p>
-        <p>123-456-7890</p>
-        <p>123 Queen Street West</p>
-        <p>Unit 10</p>
-        <p>Toronto, Ontario</p>
-        <p>M5V2D5</p>
       </div>
-    </div>
+    </section>
+
   </main>
+
   <footer>
-    Copyright <span>&copy;</span> 2020 Juno College
+    <p>Copyright <span>&copy;</span> 2020 Juno College</p>
   </footer>
+
 </body>
 </html>
