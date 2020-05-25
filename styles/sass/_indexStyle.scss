@@ -416,6 +416,41 @@ img.right {
       }
     }
   }
+
+  main.home {
+    .intro {
+      .wrapper {
+        img {
+          width: 70%;
+        }
+      }
+    }
+
+    .gallery {
+      img {
+        width: 70%;
+        margin: 0 auto;
+      
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+
+    .links {
+      .wrapper{
+        div {
+          margin-left: 20%;
+        }
+      }
+    }
+
+    .details {
+      img {
+        width: 70%;
+      }
+    }
+  }
 }
 
 @media (max-width: 400px) {

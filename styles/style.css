@@ -997,6 +997,22 @@ img.right {
   header.home .heroText h5 {
     font-size: 2.5rem;
   }
+  main.home .intro .wrapper img {
+    width: 70%;
+  }
+  main.home .gallery img {
+    width: 70%;
+    margin: 0 auto;
+  }
+  main.home .gallery img:nth-child(2) {
+    display: none;
+  }
+  main.home .links .wrapper div {
+    margin-left: 20%;
+  }
+  main.home .details img {
+    width: 70%;
+  }
 }
 
 @media (max-width: 400px) {
