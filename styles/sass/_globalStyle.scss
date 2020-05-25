@@ -231,8 +231,9 @@ input.hamburger:checked ~ .mobileMenu {
   }
 
   .web {
-    visibility: hidden;
+    display: none;
   }
+  
   .mobile {
     visibility: visible;
   } 
