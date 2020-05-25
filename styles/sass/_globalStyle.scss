@@ -78,7 +78,6 @@ nav a {
   letter-spacing: .1rem;
   font-weight: 700;
   text-align: center;
-  transition: all .5s;
 }
 
 button {
@@ -89,17 +88,18 @@ button {
   padding: 10px;
   border: none;
   cursor: pointer;
-  transition: all .5s;
 }
 
 nav a:hover,
 button:hover,
 button:focus {
   color: $accentOne;
+  transition: all .5s;
 }
 
 button:active {
-  filter: brightness(70%)
+  filter: brightness(70%);
+  transition: all .5s;
 }
 
 header {

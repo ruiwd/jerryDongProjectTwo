@@ -58,11 +58,11 @@ aside.blog a {
   letter-spacing: 2px;
   margin-top: 5px;
   border-bottom: 2px solid rgba( $textColor, $alpha: 0);
-  transition: all 0.5s;
 }
 
 aside.blog a:hover {
   border-bottom: 2px solid $textColor;
+  transition: all 0.5s;
 }
 
 aside.blog li {

@@ -394,8 +394,6 @@ nav a {
   letter-spacing: .1rem;
   font-weight: 700;
   text-align: center;
-  -webkit-transition: all .5s;
-  transition: all .5s;
 }
 
 button {
@@ -406,19 +404,21 @@ button {
   padding: 10px;
   border: none;
   cursor: pointer;
-  -webkit-transition: all .5s;
-  transition: all .5s;
 }
 
 nav a:hover,
 button:hover,
 button:focus {
   color: #FFC600;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 button:active {
   -webkit-filter: brightness(70%);
           filter: brightness(70%);
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 header {
@@ -1070,12 +1070,12 @@ aside.blog a {
   letter-spacing: 2px;
   margin-top: 5px;
   border-bottom: 2px solid rgba(250, 255, 254, 0);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
 }
 
 aside.blog a:hover {
   border-bottom: 2px solid #FAFFFE;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 aside.blog li {
