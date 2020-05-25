@@ -4,20 +4,17 @@ header.blog {
   background-repeat: no-repeat;
   height: 500px;
   position: relative;
-}
-
-body.blog {
-  height: 2800px
+  background-position: 50% 50%;
 }
 
 header.blog h2 {
   position: absolute;
-  top: 50%;
+  top: 40%;
 }
 
 main.blog {
-  position: absolute;
-  top: 350px;
+  position: relative;
+  top: -150px;
 }
 
 aside.blog {
@@ -38,10 +35,16 @@ aside.blog::after {
   display: block;
   background-color: $accentTwo;
   height: 100%;
-  width: calc(100% + 20px);
-  left: -20px;
-  bottom: -30px;
+  width: calc(100% + 2rem);
+  left: -2rem;
+  bottom: -3rem;
   z-index: -10;
+}
+
+aside.blog h3,
+aside.blog p,
+aside.blog ul {
+  padding: 0px 10px;
 }
 
 aside.blog h3 {
@@ -88,8 +91,8 @@ aside.blog li::before {
   background-color: $backgroundTwo;
   height: 110%;
   width: 120%;
-  right: -26px;
-  bottom: 5px;
+  right: -2.7rem;
+  bottom: .5rem;
   z-index: -10;
 }
 
@@ -98,9 +101,9 @@ aside.blog li::before {
   position: absolute;
   display: block;
   background-color: $accentTwo;
-  height: 110%;
+  height: 130%;
   width: 120%;
-  right: -31px;
+  right: -3.2rem;
   bottom: 0px;
   z-index: -20;
 }
@@ -115,7 +118,7 @@ aside.blog li::before {
 
 .post img {
   width: 60%;
-  filter: drop-shadow(20px 20px 0px $accentTwo);
+  filter: drop-shadow(2rem 2rem 0px $accentTwo);
 }
 
 .post p {
@@ -132,12 +135,12 @@ main.blog h3 + p {
 }
 
 .comments {
-  padding: 30px 0px 100px 0px;
+  padding-top: 20px;
 }
 
 .comments h3 {
   color: $textColor;
-  margin: 20px 0px;
+  margin: 30px 0px;
 }
 
 .userComment {
@@ -163,4 +166,104 @@ main.blog h3 + p {
 .comments input,
 .comments textarea {
   background-color: $backgroundTwo;
+}
+
+@media (max-width: 1100px) {
+  main.blog {
+    h3 {
+      font-size: 3.6rem;
+    }
+
+    .post .text {
+      &::before {
+        right: -2.1rem;
+      }
+  
+      &::after {
+        right: -2.6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  main.blog {
+    h3 {
+      font-size: 4.5rem;
+    
+      & + p {
+        margin-top: 10px;
+      }
+    }
+
+    .post {
+      img {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .text{
+        width: 100%;
+        padding: 0px;
+
+        &::before {
+          display: none;
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    .comments {
+      padding-top: 0px;
+
+      .userComment{
+        width: 100%;
+      }
+    }
+  }
+
+  aside.blog {
+    background-color: $accentTwo;
+    padding: 30px 0px;
+    top: -50px;
+
+    &::after {
+      display: none;
+    }
+
+    .container {
+      margin: 0 auto;
+      width: 85%;
+      
+      img {
+        display: none;
+      }
+    }
+
+    .links {
+      margin-top: 20px;
+    }
+
+    h3 {
+      font-size: 4rem;
+    }
+  }
+}
+
+@media (max-height: 500px) {
+  header.blog {
+    height: 300px;
+
+    h2 {
+      position: relative;
+    }
+  }
+
+  main.blog .post img {
+    width: 40%;
+  }
 }

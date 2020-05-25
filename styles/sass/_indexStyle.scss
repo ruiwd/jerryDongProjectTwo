@@ -2,8 +2,8 @@ header.home {
   position: relative;
   width: 100%;
   height: 100vh;
+  max-height: 850px;
   background-image: url(../assets/home-image-1.jpg);
-  background-attachment: fixed;
   background-size: cover;
   background-position-x: 70%;
   background-repeat: no-repeat;
@@ -11,32 +11,42 @@ header.home {
 
 header.home .heroText {
   position: absolute;
-  left: 43%;
+  left: 47%;
   top: 40%;
 }
 
-header.home img {
-  margin-top: 150px;
-  width: 40%;
+header.home .heroText h2 {
+  display: inline;
+}
+
+.floatingImage {
+  width: 45vw;
+  position: absolute;
+  bottom: -7%;
+}
+
+.intro {
+  position: relative;
 }
 
 .intro .wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 100px 0px 70px 0px;
+  padding: 125px 0px 70px 0px;
 }
 
 .intro .text {
-  width: 70%;
+  width: 65%;
 }
 
 .intro .text p {
   margin: 20px 0px 30px 0px;
 }
 
-.intro img {
+.intro .textImage {
   width: 25%;
-  filter: drop-shadow(-20px 20px 0px $accentTwo);
+  filter: drop-shadow(-2rem 2rem 0px $accentTwo);
+  align-self: center;
 }
 
 .gallery {
@@ -87,7 +97,11 @@ header.home img {
 }
 
 .links .contact i {
-  padding-left: 2px;
+  padding-left: 1px;
+}
+
+.link i::before {
+  position: relative;
 }
 
 .links i::after {
@@ -105,14 +119,22 @@ header.home img {
 
 .details {
   background-color: $backgroundOne;
-  height: 800px;
   position: relative;
 }
 
 .details img,
 .details .text {
-  position: absolute;
   width: 45%;
+}
+
+.details .text {
+  position: relative;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.details img {
+  position: absolute;
 }
 
 .details .text p {
@@ -124,36 +146,34 @@ header.home img {
 }
 
 img.left {
-  filter: drop-shadow(20px 20px 0px $accentOne);
+  filter: drop-shadow(2rem 2rem 0px $accentOne);
   left: 0px;
   top: -50px;
 }
 
 img.right {
-  filter: drop-shadow(-20px 20px 0px $accentOne);
+  filter: drop-shadow(-2rem 2rem 0px $accentOne);
   right: 0px;
-  bottom: -50px;
+  bottom: -35px;
 }
 
 .text.left {
   padding-left: 7.5vw;
   left: 0px;
-  bottom: 50px;
   text-align: right;
 }
 
 .text.right {
   padding-right: 7.5vw;
-  right: 0px;
-  top: 50px;
+  left: 55%;
 }
 
 .footerBanner {
   width: 100%;
-  height: 500px;
-  background-image: url(../assets/banner-image.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+
+.footerBanner img {
+  width: 100%;
 }
 
 .trials {
@@ -167,10 +187,246 @@ img.right {
 .trials p {
   display: block;
   width: 70%;
-  margin: 20px auto;
+  margin: 30px auto;
 }
 
 .trials button {
   display: block;
   margin: 0 auto;
+}
+
+@media (min-width: 1800px) {
+  .floatingImage {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 1400px) {  
+  header.home {
+    height: 800px;
+  }
+
+  main.home {
+    .intro {
+      .wrapper {
+        padding: 125px 0px 50px 0px;
+      }
+    }
+    
+    .details {
+      .text {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  header.home {
+    height: 750px;
+  }
+
+  main.home {
+    .links i::after {
+      left: -6px
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  header.home {
+    height: 700px;
+
+    img {
+      bottom: 0px;
+    }
+  }
+
+  main.home {
+    .intro {
+      .wrapper {
+        padding-top: 50px;
+      }
+    }
+
+    .details {
+      .text {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  header.home {
+    height: 650px;
+
+    h2 {
+      font-size: 9rem;
+    }
+  }
+
+  main.home {
+    .details {
+      .text {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+    }
+
+    .trials p {
+      width: 85%;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  header.home {
+    height: 575px;
+  }
+
+  main.home {
+    .details {
+      .text {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  header.home {
+    height: 500px;
+
+    .heroText {
+      left: 15%;
+      top: 35%;
+    }
+
+    .floatingImage {
+      display: none;
+    }
+  }
+
+  main.home {
+    .intro {
+      .wrapper {
+        flex-direction: column-reverse;
+
+        img {
+          width: 40%;
+        }
+
+        .text {
+          width: 100%;
+          text-align: center;
+          margin-top: 50px;
+        }
+      }
+    }
+
+    .gallery {
+      padding: 50px 0px;
+
+      img {
+        width: 48%;
+      
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+
+    .links {
+      .wrapper {
+        padding: 30px 0px;
+        
+        div {
+          width: 85%;
+          margin-left: 12%;
+        }
+      }
+    }
+
+    .details {
+      padding: 30px 0px;
+
+      img {
+        position: static;
+        display: block;
+        margin: 30px auto;
+      }
+
+      .text {
+        position: static;
+        width: 85%;
+        margin: 0px auto;
+        padding: 20px 0px 0px 0px;
+        text-align: center;
+      }
+
+      .bottom {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+
+    .trials {
+      padding: 50px;
+
+      p {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  header.home {
+    background-position: 85% 85%;
+  }
+}
+
+@media (max-width: 600px) {
+  header.home {
+    h2 {
+      font-size: 8rem;
+    }
+    h5 {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  header.home {
+    .heroText {
+      top: 20%;
+
+      h2 {
+        font-size: 7rem;
+
+      }
+      h5 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  header.home {
+    .heroText {
+      h2 {
+        display:block;
+
+        &:last-child {
+          padding-left: 100px;
+        }
+      }
+    }
+  }
 }

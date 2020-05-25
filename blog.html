@@ -8,12 +8,27 @@
   <script src='https://kit.fontawesome.com/30b04c8f55.js' crossorigin='anonymous'></script>
   <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body class="blog">
+
+  <div class="mobile">
+    <i class="fas fa-bars hamburger"></i>
+    <input class="hamburger" type="checkbox" name="hamburger" id="hamburger">
+    <div class="mobileMenu">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./index.html">About</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
   <header class="blog">
     <div class="wrapper">
       <div class="bar">
         <h1 class="logo">Mindn'Soul</h1>
-        <nav>
+        <nav class="web">
           <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./index.html">About</a></li>
@@ -25,23 +40,6 @@
       <h2>Blog</h2>
     </div>
   </header>
-
-  <aside class="blog">
-    <div class="container">
-      <img src="./assets/sidebar-image.jpg" alt="Stack of rocks">
-      <h3>Our mission</h3>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui quidem temporibus eaque quaerat aut? Excepturi?</p>
-      <h3>Recent posts</h3>
-      <div class="recent">
-        <ul>
-          <li><a href="#">Lorem ipsum dolor sit.</a></li>
-          <li><a href="#">Lorem ipsum dolor sit.</a></li>
-          <li><a href="#">Lorem ipsum dolor sit.</a></li>
-          <li><a href="#">Lorem ipsum dolor sit.</a></li>
-        </ul>
-      </div>
-    </div>
-  </aside>
 
   <main class="blog">
 
@@ -89,6 +87,25 @@
     </section>
 
   </main>
+
+  <aside class="blog">
+    <div class="container">
+      <img src="./assets/sidebar-image.jpg" alt="Stack of rocks">
+      <div class="text">
+        <h3>Our mission</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui quidem temporibus eaque quaerat aut? Excepturi?</p>
+      </div>
+      <div class="links">
+        <h3>Recent posts</h3>
+        <ul>
+          <li><a href="#">Lorem ipsum dolor sit.</a></li>
+          <li><a href="#">Lorem ipsum dolor sit.</a></li>
+          <li><a href="#">Lorem ipsum dolor sit.</a></li>
+          <li><a href="#">Lorem ipsum dolor sit.</a></li>
+        </ul>
+      </div>
+    </div>
+  </aside>
 
   <footer>
     <p>Copyright <span>&copy;</span> 2020 Juno College</p>

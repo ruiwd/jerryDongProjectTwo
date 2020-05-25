@@ -4,15 +4,12 @@ header.contact {
   background-repeat: no-repeat;
   height: 500px;
   position: relative;
-}
-
-body.contact {
-  height: 1000px
+  background-position: 50% 50%;
 }
 
 header.contact h2 {
   position: absolute;
-  top: 50%;
+  top: 40%;
 }
 
 aside.contact {
@@ -22,8 +19,8 @@ aside.contact {
 main.contact {
   width: 100%;
   height: 400px;
-  position: absolute;
-  top: 350px;
+  position: relative;
+  top: -150px;
 }
 
 main.contact .container {
@@ -32,7 +29,7 @@ main.contact .container {
 
 .contact form {
   padding: 5rem;
-  filter: drop-shadow(20px 20px 0px $accentOne);
+  filter: drop-shadow(2rem 2rem 0px $accentOne);
   position: absolute;
   top: -35%;
   height: auto;
@@ -53,4 +50,33 @@ main.contact .container {
 
 .social + p {
   margin: 10px 0px;
+}
+
+@media (max-width: 840px) {
+  aside.contact {
+    left: 0px;
+    text-align: center;
+
+    .social i {
+      padding: 5px;
+      margin: 5px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  aside.contact {
+    top: -100px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-height: 500px) {
+  header.contact {
+    height: 300px;
+
+    h2 {
+      position: relative;
+    }
+  }
 }
