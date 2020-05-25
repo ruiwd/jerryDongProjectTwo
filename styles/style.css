@@ -1319,7 +1319,9 @@ main.contact .container {
 @media (max-width: 840px) {
   aside.contact {
     left: 0px;
+    top: 0px;
     text-align: center;
+    margin-bottom: 50px;
   }
   aside.contact .social i {
     padding: 5px;
@@ -1329,8 +1331,8 @@ main.contact .container {
 
 @media (max-width: 500px) {
   aside.contact {
-    top: -100px;
-    margin-bottom: 0px;
+    top: -50px;
+    margin-bottom: 25px;
   }
 }
 
