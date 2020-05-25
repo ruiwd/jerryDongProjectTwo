@@ -54,13 +54,18 @@ header.home .heroText h2 {
   padding: 75px 0px;
 }
 
-.gallery .wrapper {
+.gallery ul {
   display: flex;
   justify-content: space-between;
 }
 
-.gallery img {
+.gallery li {
   width: 30%;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
 }
 
 .links .wrapper {
@@ -331,7 +336,7 @@ img.right {
     .gallery {
       padding: 50px 0px;
 
-      img {
+      li {
         width: 48%;
       
         &:last-child {
@@ -427,7 +432,7 @@ img.right {
     }
 
     .gallery {
-      img {
+      li {
         width: 70%;
         margin: 0 auto;
       

@@ -676,7 +676,7 @@ header.home .heroText h2 {
   padding: 75px 0px;
 }
 
-.gallery .wrapper {
+.gallery ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -685,8 +685,13 @@ header.home .heroText h2 {
           justify-content: space-between;
 }
 
-.gallery img {
+.gallery li {
   width: 30%;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
 }
 
 .links .wrapper {
@@ -926,10 +931,10 @@ img.right {
   main.home .gallery {
     padding: 50px 0px;
   }
-  main.home .gallery img {
+  main.home .gallery li {
     width: 48%;
   }
-  main.home .gallery img:last-child {
+  main.home .gallery li:last-child {
     display: none;
   }
   main.home .links .wrapper {
@@ -1000,11 +1005,11 @@ img.right {
   main.home .intro .wrapper img {
     width: 70%;
   }
-  main.home .gallery img {
+  main.home .gallery li {
     width: 70%;
     margin: 0 auto;
   }
-  main.home .gallery img:nth-child(2) {
+  main.home .gallery li:nth-child(2) {
     display: none;
   }
   main.home .links .wrapper div {
